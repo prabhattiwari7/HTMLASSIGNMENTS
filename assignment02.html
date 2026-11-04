@@ -5,15 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            
+            padding: 0;
+        }
         b{
             color:rgb(0, 138, 0)
+        }
+        input{
+            margin: 10px 0px;
+            width: 100%;
+            padding: 8px;
+        }
+        #div{
+            padding: 10px;}
+        #male{
+            width: auto;
+
+        }
+         #female{
+            width: auto;
+
+        }
+         #others{
+            width: auto;
+
         }
     </style>
 </head>
 <body>
+    <div id = "div">
     <h2>Application Form</h2>
     <p>Student internship application. *Required</p>
     <b>Personal Details / fieldset + legend</b>
+    <br><br>
+    <label for="name">Full name *</label>
+    <br>
+    <input id = "name"type="text" placeholder="Prabhat Tiwari" required>
+    <label for="email">Email *</label>
+    <br>
+    <input id ="email"type="email" placeholder = "prabhat7@gmail.com" required>
+    <label for="password">Password *</label>
+    <br>
+    <input id = "password" type="password" placeholder="&#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226 &#8226" required>
+    <label for="phone">Phone *</label>
+    <br>
+    <input id = "phone" type="tel" placeholder = "9797273979" required>
+    <label for="url">Portfolio URL</label>
+    <br>
+    <input id = "url" type="url" placeholder="https://example.com">
+    <label for="age">Age *</label>
+    <br>
+    <input id = "age" type="number" placeholder = "18" required>
+    <label for="gender">Gender:</label>
+    <input id = "male"type="radio" name="gender">
+    <label for="male">Male</label>
+    <input id = "female"type="radio" name="gender">
+    <label for="female">Female</label>
+    <input type="radio" id = "others" name="gender">
+    <label for="others">Others / prefer not to say</label>
+
+</div>
     
 </body>
 </html>
