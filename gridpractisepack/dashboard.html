@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          * {
+            margin: 10px;
+          }
+
+          a {
+            text-decoration: none;
+            color: aliceblue;
+          }
+          #container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            background-color: rgb(76, 101, 165);
+            padding-right: 100px;
+          }
+          #anchors {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+          }
+          #grid {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+          }
+          #innergrid1 {
+            background-color: #c0ddf5;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+           grid-template-rows: 47px 17px 17px 17px 17px;
+          }
+          #innergrid2 {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            height: 500px;
+          }
+          #cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin-bottom: 10px;
+          }
+          .card {
+            background-color: aliceblue;
+            padding: 10px;
+            border: 2px solid rgb(96, 93, 93);
+            border-radius: 10px;
+            height: 100px;
+          }
+          
+        </style>
+      </head>
+      <body>
+        <div id="container">
+          <div>
+            <a id="logo" href="">HEADER / STUDENT DASHBOARD</a>
+          </div>
+          <div id="anchors">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+        <div id="grid">
+          <div id="innergrid1">
+            <b id="sidebar">SIDEBAR</b>
+            <p class = "para">Overview</p>
+            <p class = "para">Courses</p>
+            <p class = "para">Assignment</p>
+            <p class = "para">Settings</p>
+          </div>
+          <div id="innergrid2">
+            <h3>MAIN / Learning overview</h3>
+            <div id="cards">
+              <div class="card">
+                <h4>HTML</h4>
+                <p>8 lessons</p>
+              </div>
+              <div class="card">
+                <h4>CSS</h4>
+                <p>12 lessons</p>
+              </div>
+              <div class="card">
+                <h4>Projects</h4>
+                <p>3 active</p>
+              </div>
+            </div>
+            <p id = "paragraph">
+              <b>Your learning activity apperars here.</b>
+            </p>
+          </div>
+        </div>
+         <div id="container">
+          <div>
+            <a id="logo" href="">FOOTER / CAMPUS LEARNING PORTAL</a>
+          </div>
+          <div id="anchors">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+
+      </body>
+    </html>
+  </body>
+</html>
