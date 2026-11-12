@@ -1,51 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        :root{
-            --primarycolour : rgb(30, 43, 30);
-            --seconndarycolor: rgb(0, 80, 0);
-            --tertiarycolor:rgb(171, 255, 171);
-        }
-        *{
-            margin:0px;
-            padding:0px;
-        }
-        #navbar{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding:15px;
-            background-color: var(--primarycolour);
-        }
-        #menu{
-            width:250px;
-            display: flex;
-            justify-content:space-between;
-
-        }
-        #logo{
-           color:aliceblue;
-        }
-        a{
-            text-decoration:none;
-            color: aliceblue;
-        }
+      :root {
+        --primarycolour: rgb(30, 43, 30);
+        --seconndarycolor: rgb(0, 80, 0);
+        --tertiarycolor: rgb(171, 255, 171);
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--primarycolour);
+      }
+      #menu {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #logo {
+        color: aliceblue;
+      }
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      #visitbutton {
+        margin: 10px;
+        padding: 10px;
+        padding-right: 30px;
+        width: 150px;
+        text-align: left;
+        color: white;
+        border-radius: 4px;
+        background-color: var(--seconndarycolor);
+      }
+      #header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: var(--tertiarycolor);
+      }
+      h5 {
+        margin: 10px;
+      }
+      h1 {
+        margin: 5px;
+      }
+      #quote {
+        color: rgb(239, 200, 7);
+      }
     </style>
-</head>
-<body>
-    <div id = "navbar">
-        <span id = "logo">LEAF & BEAN</span>
-        <div id = "menu">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
-        </div>
+  </head>
+  <body>
+    <div id="navbar">
+      <span id="logo">LEAF & BEAN</span>
+      <div id="menu">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+      </div>
     </div>
-    
-</body>
+    <div id="header">
+      <h5 id="quote">YOUR NEIGHBOURHOOD CAFE</h5>
+      <h1>Good coffee.</h1>
+      <h1>A little room to pause.</h1>
+      <h5>Fresh brews and warm bites.</h5>
+      <button id="visitbutton">Visit us</button>
+    </div>
+  </body>
 </html>
