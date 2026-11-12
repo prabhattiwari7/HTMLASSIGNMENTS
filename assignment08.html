@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primarycolour : rgb(30, 43, 30);
+            --seconndarycolor: rgb(0, 80, 0);
+            --tertiarycolor:rgb(171, 255, 171);
+        }
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding:15px;
+            background-color: var(--primarycolour);
+        }
+        #menu{
+            width:250px;
+            display: flex;
+            justify-content:space-between;
+
+        }
+        #logo{
+           color:aliceblue;
+        }
+        a{
+            text-decoration:none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id = "navbar">
+        <span id = "logo">LEAF & BEAN</span>
+        <div id = "menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    
+</body>
+</html>
