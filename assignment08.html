@@ -8,7 +8,7 @@
       :root {
         --primarycolour: rgb(30, 43, 30);
         --seconndarycolor: rgb(0, 80, 0);
-        --tertiarycolor: rgb(171, 255, 171);
+        --tertiarycolor: rgb(30, 68, 47);
       }
       * {
         margin: 0px;
@@ -41,7 +41,9 @@
         text-align: left;
         color: white;
         border-radius: 4px;
-        background-color: var(--seconndarycolor);
+        background-color: rgb(3, 89, 68);
+        border: 2px solid rgb(3, 89, 68);
+
       }
       #header {
         display: flex;
@@ -52,13 +54,51 @@
       }
       h5 {
         margin: 10px;
+        color:aliceblue;
       }
       h1 {
         margin: 5px;
+        color:white;
       }
       #quote {
         color: rgb(239, 200, 7);
       }
+      #cards{
+        padding:15px;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+      }
+      .card{
+        padding: 10px;
+        width: 450px;
+        border: 2px solid black;
+      }
+      h3{
+        margin: 10px;
+      }
+      p{
+        margin:10px;
+        margin-bottom: 50px;
+      }
+      #image{
+        padding:10px;
+
+      }
+      img{
+        border-radius: 5px;
+      }
+      h2{
+        margin:15px;
+      }
+      #warmbites{
+        border: 4px solid orange;
+      }
+      #studycorner{
+        border: 4px sold rgb(12, 71, 12);
+      }
+      
     </style>
   </head>
   <body>
@@ -78,5 +118,36 @@
       <h5>Fresh brews and warm bites.</h5>
       <button id="visitbutton">Visit us</button>
     </div>
+    <div>
+      <h2>Our favourites</h2>
+    <div id = "cards">
+            <div class = "card">
+                <h3>Fresh brews</h3>
+                <p>Coffee,made your way.</p>
+            </div>
+             <div id = "warmbites" class = "card">
+                <h3>Warm bites</h3>
+                <p>Sandwiches and treats.</p>
+            </div>
+            <div style ="border: 4px solid rgb(8, 58, 8);" "studycorner" class="card">
+                  <h3>Study corner</h3>
+                <p>Space for your ideas.</p>
+            </div>
+            
+        </div>
+      </div>
+        <div id = "image">
+        <img src="coffeeee.webp" alt="" height = "150px" width="100%">
+      </div>
+        <p id = "place">"A lovely place for a study break."</p>
+        <p>12 College Road,Barielly</p>
+        <div id="navbar">
+      <span id="logo">LEAF & BEAN</span>
+      <div id="menu">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+      </div>
   </body>
 </html>
