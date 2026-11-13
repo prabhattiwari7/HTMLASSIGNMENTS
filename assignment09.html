@@ -43,6 +43,22 @@
             margin: 10px  0px;
             border: 2px solid var(--secondarycolor);
         }
+        #cards{
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+             grid-template-rows: 1fr 1fr 1fr;
+             gap:20px;
+        }
+        .card{
+            border:2px solid var(--secondarycolor);
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #main{
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +78,34 @@
         </h1>
         <p>A community for curious students.</p>
         <button>Join us</button>
+    </div>
+    <div id = "main">
+        <h3>Learn &#183 Build &#183 Belong &#183</h3>
+        </div>
+        <div id = "cards">
+            <div class = "card">
+                <h4>Learn together</h4>
+                <p>join peer study groups.</p>
+            </div>
+            <div class = "card"><h4>Buid projects</h4>
+            <p>practise your new skills.</p>
+        </div>
+        <div class = "card">
+            <h4>Find mentors</h4>
+            <p>Meet experinced students.</p>
+        </div>
+        <div class = "card">
+            <h4>Share ideas</h4>
+            <p>turn ideas into team efforts.</p>
+        </div>
+        <div class = "card">
+            <h4>Join events</h4>
+            <p>meet your community.</p>
+        </div>
+        <div class = "card">
+            <h4>Grow your skills</h4>
+            <p>Make progress every week.</p>
+        </div>
     </div>
 </body>
 </html>
