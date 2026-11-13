@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primarycolor:rgb(223, 96, 96);
+            --secondarycolor:rgb(255, 55, 0);
+        }
+        #navbar{
+            padding:15px;
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color:var(--secondarycolor)
+        }
+        #menu{
+            width:250px;
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+        }
+        #logo{
+            color:aliceblue;
+        }
+        #header{
+            padding: 10px;
+            background-color:var(--primarycolor);
+            
+        }
+        button{
+            width: 110px;
+            padding: 8px;
+            text-align: left;
+            background-color: var(--secondarycolor);
+            color: whitesmoke;
+            border-radius: 4px;
+            margin: 10px  0px;
+            border: 2px solid var(--secondarycolor);
+        }
+    </style>
+</head>
+<body>
+    <div id = "navbar">
+        <span id = "logo">CAMPUS COLLECTIVE</span>
+        <div id = "menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>       
+        </div>
+    </div>
+    <div id = "header">
+        <h4>LEARN &#183 BUILD &#183 BELONG</h4>
+        <h1>
+            Your next big idea <br>starts on campus.
+        </h1>
+        <p>A community for curious students.</p>
+        <button>Join us</button>
+    </div>
+</body>
+</html>
