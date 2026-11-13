@@ -46,8 +46,7 @@
         #cards{
             margin: 10px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-             grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns:1fr 1fr 1fr;
              gap:20px;
         }
         .card{
@@ -59,6 +58,34 @@
         #main{
             padding: 10px;
         }
+        #images{
+            padding: 10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        #getinvolved{
+            width:150px;
+            padding:10px;
+        }
+        #footer{
+            padding:10px;
+        }
+
+
+        
+        @media (max-width: 768px) {
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width: 480px) {
+    #cards {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 <body>
@@ -105,6 +132,27 @@
         <div class = "card">
             <h4>Grow your skills</h4>
             <p>Make progress every week.</p>
+        </div>
+    </div>
+    <div id ="footer">
+        <h3>Life in the community</h3>
+    <div id = "image">
+        <div id = "images">
+            <img src="groupdiscussion.jpeg" alt="" height="200px" width="450">
+            <img src="campusevent.jpeg" alt="" height="200px"  width="450">
+            <img src="studentonwork.jpeg" alt="" height="200px"  width="450">
+        </div>
+    </div>
+    <h3>Ready to build something?</h3>
+        <button id ="getinvolved">Get involved</button>
+    </div>
+    <div id = "navbar">
+        <span id = "logo">&#64 2026 CAMPUS COLLECTIVE</span>
+        <div id = "menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>       
         </div>
     </div>
 </body>
